@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+</head>
+<body>
+    <h2> O que o JavaScript pode fazer?</h2>
+    <p> JavaScript pode mudar o valor do atributo HMTL</p>
+    <p> Nesse caso o JavaScript muda o valor do atributo "src" (source) de uma imagem</p>
+    <img id="myImage" alt="Lâmpada" src="img/apagada.jpg">
+    <br>
+    <button onclick="document.getElementById('myImage').src='img/acesa.jpg'">Ligar a luz</button>
+    <button onclick="document.getElementById('myImage').src='img/apagada.jpg'">Desligar a luz</button>
+</body>
+</html>
