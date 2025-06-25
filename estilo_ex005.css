@@ -87,3 +87,8 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
+
+#resultado:empty::before {
+    content: "Resultado...";
+    color: #a8a8a8;
+}
