@@ -1,34 +1,44 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #fdf6f0;
+    background: linear-gradient(135deg, #fceae8, #e0f7fa);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
 
+/* Container da calculadora */
+.calculadora {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
-    margin-bottom: 20px;
-    color: #6d6875;
+    color: #5e548e;
+    margin-bottom: 25px;
     font-size: 2rem;
 }
 
+/* Inputs */
 input[type="number"] {
+    width: 45%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px 2%;
     border: 2px solid #d6ccc2;
-    border-radius: 8px;
-    background-color: #fff;
-    width: 150px;
+    border-radius: 10px;
+    background-color: #f8edeb;
     font-size: 1rem;
     color: #4a4e69;
     transition: border-color 0.3s;
@@ -39,32 +49,40 @@ input[type="number"]:focus {
     border-color: #b5838d;
 }
 
+/* Botões */
+.botoes {
+    margin-top: 20px;
+}
+
 button {
     padding: 10px 16px;
-    margin: 5px;
+    margin: 6px;
     background-color: #ffcdb2;
     border: none;
     border-radius: 8px;
     color: #5e548e;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    min-width: 100px;
 }
 
 button:hover {
     background-color: #ffb4a2;
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
 
+/* Resultado */
 #resultado {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    color: #6d6875;
-    padding: 10px 20px;
+    margin-top: 25px;
+    padding: 15px;
     background-color: #e9edc9;
     border: 1px solid #ccd5ae;
-    border-radius: 8px;
-    min-height: 30px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: #6d6875;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
